@@ -13,5 +13,5 @@
 class Actor < ApplicationRecord
   validates(:name, presence: true)
 
-  has_many(:characters, class_name: "Character", foreign_key: "character_id", primary_key: "id")
+  has_many(:characters, class_name: "Character", foreign_key: "characters_id", primary_key: "id")
 end
