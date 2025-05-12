@@ -13,5 +13,5 @@
 class Director < ApplicationRecord
   validates(:name, presence: true)
 
-  has_many(:filmography, class_name: "Movie", foreign_key: "director_id", primary_key: "id")
+   has_many(:filmography, :class_name => "Movie" , :foreign_key => "director_id")
 end
